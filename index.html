@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diwa Pilipinas | Filipino Culture &amp; Traditions</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <i class="bi bi-flower1 me-1"></i> Diwa Pilipinas
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO CAROUSEL ============ -->
+  <header id="home" style="margin-top:56px;">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="ratio ratio-21x9 bg-dark">
+            <img src="festival.jpg" class="w-100 h-100 object-fit-cover opacity-75" alt="Sinulog Festival">
+          </div>
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+            <h1 class="fw-bold">Diwa ng Pilipinas</h1>
+            <p>A living tapestry of festivals, faith, and color found across 7,000+ islands.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-21x9 bg-dark">
+            <img src="barong-at-saya.jpg" class="w-100 h-100 object-fit-cover opacity-75" alt="Barong Tagalog">
+          </div>
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+            <h1 class="fw-bold">Woven Into Every Thread</h1>
+            <p>From Barong Tagalog to Filipiniana, tradition dresses every Filipino celebration.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="ratio ratio-21x9 bg-dark">
+            <img src="sinigang.jpg" class="w-100 h-100 object-fit-cover opacity-75" alt="Lechon">
+          </div>
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+            <h1 class="fw-bold">Flavors That Tell a Story</h1>
+            <p>Every dish carries generations of Filipino resourcefulness and hospitality.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ INTRO ============ -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="fw-bold text-primary">Explore the Heart of Filipino Culture</h2>
+          <p class="text-secondary">From festivals and attire to cuisine and craftsmanship, discover 12 traditions
+            that showcase the richness and resilience of Filipino identity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold text-primary mb-1">Culture Gallery</h2>
+      <p class="text-center text-secondary mb-4">12 traditions across Luzon, Visayas, and Mindanao</p>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="barong-tagalog.webp" class="object-fit-cover" alt="Barong Tagalog"></div>
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Luzon</span>
+              <h5 class="card-title">Barong Tagalog</h5>
+              <p class="card-text">The sheer, embroidered formal wear worn by Filipino men.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-barong-tagalog">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="filipiniana.jpg" class="object-fit-cover" alt="Filipiniana Terno"></div>
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Luzon</span>
+              <h5 class="card-title">Filipiniana / Terno</h5>
+              <p class="card-text">The iconic butterfly-sleeved dress of Filipino women.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-filipiniana-terno">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="pahiyas.jpg" class="object-fit-cover" alt="Pahiyas Festival"></div>
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Luzon</span>
+              <h5 class="card-title">Pahiyas Festival</h5>
+              <p class="card-text">Lucban's colorful harvest festival of rice wafers and crops.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-pahiyas-festival">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="adobo.webp" class="object-fit-cover" alt="Adobo"></div>
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Luzon</span>
+              <h5 class="card-title">Adobo</h5>
+              <p class="card-text">The country's beloved vinegar-and-soy braised dish.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-adobo">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="Baybayin.webp" class="object-fit-cover" alt="Baybayin Script"></div>
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Luzon</span>
+              <h5 class="card-title">Baybayin Script</h5>
+              <p class="card-text">The pre-colonial writing system of the Philippine islands.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-baybayin-script">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="parol.avif" class="object-fit-cover" alt="Parol Lantern"></div>
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Luzon</span>
+              <h5 class="card-title">Parol</h5>
+              <p class="card-text">The star-shaped lantern symbolizing Filipino Christmas spirit.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-parol-lantern">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="sinulog-festival.jpg" class="object-fit-cover" alt="Sinulog Festival"></div>
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Visayas</span>
+              <h5 class="card-title">Sinulog Festival</h5>
+              <p class="card-text">Cebu's grand street-dancing festival honoring the Santo Ni&ntilde;o.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-sinulog-festival">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="atih-atihan.webp" class="object-fit-cover" alt="Ati-Atihan Festival"></div>
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Visayas</span>
+              <h5 class="card-title">Ati-Atihan Festival</h5>
+              <p class="card-text">The oldest Philippine festival, held yearly in Kalibo, Aklan.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-ati-atihan-festival">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="lechon.webp" class="object-fit-cover" alt="Lechon"></div>
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Visayas</span>
+              <h5 class="card-title">Lechon</h5>
+              <p class="card-text">Cebu's famous whole roasted pig with crackling skin.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-lechon">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="tinikling-dance-philippines.jpg" class="object-fit-cover" alt="Tinikling Dance"></div>
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Visayas</span>
+              <h5 class="card-title">Tinikling</h5>
+              <p class="card-text">A folk dance imitating the tikling bird between bamboo poles.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-tinikling-dance">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="kulintang.jpg" class="object-fit-cover" alt="Kulintang"></div>
+            <div class="card-body">
+              <span class="badge bg-dark mb-2">Mindanao</span>
+              <h5 class="card-title">Kulintang</h5>
+              <p class="card-text">A gong ensemble central to Maguindanao musical tradition.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-kulintang">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="ratio ratio-4x3"><img src="tinalak weaving.png" class="object-fit-cover" alt="T'nalak Weaving"></div>
+            <div class="card-body">
+              <span class="badge bg-dark mb-2">Mindanao</span>
+              <h5 class="card-title">T'nalak Weaving</h5>
+              <p class="card-text">Sacred dream-inspired cloth woven by the T'boli of South Cotabato.</p>
+              <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modal-tnalak-weaving">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section id="categories" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold text-primary mb-4">Browse by Category</h2>
+
+      <ul class="nav nav-pills justify-content-center mb-4" id="categoryTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#festivals" type="button">Festivals</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#attire" type="button">Attire</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#food" type="button">Food</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#arts" type="button">Arts &amp; Crafts</button>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <!-- Festivals -->
+        <div class="tab-pane fade show active" id="festivals">
+          <div class="row g-3">
+            <div class="col-12 col-md-4">
+              <div class="ratio ratio-4x3"><img src="sinulog-festival.jpg" class="rounded object-fit-cover" alt="Sinulog"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Sinulog Festival</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="ratio ratio-4x3"><img src="atih-atihan.webp" class="rounded object-fit-cover" alt="Ati-Atihan"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Ati-Atihan Festival</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="ratio ratio-4x3"><img src="pahiyas.jpg" class="rounded object-fit-cover" alt="Pahiyas"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Pahiyas Festival</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attire -->
+        <div class="tab-pane fade" id="attire">
+          <div class="row g-3">
+            <div class="col-12 col-sm-6">
+              <div class="ratio ratio-16x9"><img src="barong-tagalog.webp" class="rounded object-fit-cover" alt="Barong Tagalog"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Barong Tagalog</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="ratio ratio-16x9"><img src="filipiniana.jpg" class="rounded object-fit-cover" alt="Filipiniana"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Filipiniana / Terno</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div class="tab-pane fade" id="food">
+          <div class="row g-3">
+            <div class="col-12 col-sm-6">
+              <div class="ratio ratio-16x9"><img src="adobo.webp" class="rounded object-fit-cover" alt="Adobo"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Adobo</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="ratio ratio-16x9"><img src="lechon.webp" class="rounded object-fit-cover" alt="Lechon"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Lechon</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arts & Crafts -->
+        <div class="tab-pane fade" id="arts">
+          <div class="row g-3">
+            <div class="col-6 col-md-6 col-lg-2">
+              <div class="ratio ratio-1x1"><img src="Baybayin.webp" class="rounded object-fit-cover" alt="Baybayin"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Baybayin Script</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2">
+              <div class="ratio ratio-1x1"><img src="parol.avif" class="rounded object-fit-cover" alt="Parol"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Parol</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2">
+              <div class="ratio ratio-1x1"><img src="tinikling-dance-philippines.jpg" class="rounded object-fit-cover" alt="Tinikling"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Tinikling</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2">
+              <div class="ratio ratio-1x1"><img src="kulintang.jpg" class="rounded object-fit-cover" alt="Kulintang"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">Kulintang</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2">
+              <div class="ratio ratio-1x1"><img src="tinalak weaving.png" class="rounded object-fit-cover" alt="T'nalak"></div>
+              <p class="text-center mt-1 mb-0 small fw-semibold">T'nalak Weaving</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion component -->
+      <h3 class="text-center fw-bold text-primary mt-5 mb-4">Browse by Region</h3>
+      <div class="accordion mx-auto col-12 col-lg-8" id="regionAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingLuzon">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#regLuzon" aria-expanded="true" aria-controls="regLuzon">
+              <i class="bi bi-geo-alt-fill me-2"></i> Luzon
+            </button>
+          </h2>
+          <div id="regLuzon" class="accordion-collapse collapse show"
+            aria-labelledby="headingLuzon" data-bs-parent="#regionAccordion">
+            <div class="accordion-body">Barong Tagalog, Filipiniana/Terno, Pahiyas Festival, Adobo, Baybayin Script, Parol.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVisayas">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#regVisayas" aria-expanded="false" aria-controls="regVisayas">
+              <i class="bi bi-geo-alt-fill me-2"></i> Visayas
+            </button>
+          </h2>
+          <div id="regVisayas" class="accordion-collapse collapse"
+            aria-labelledby="headingVisayas" data-bs-parent="#regionAccordion">
+            <div class="accordion-body">Sinulog Festival, Ati-Atihan Festival, Lechon, Tinikling.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMindanao">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#regMindanao" aria-expanded="false" aria-controls="regMindanao">
+              <i class="bi bi-geo-alt-fill me-2"></i> Mindanao
+            </button>
+          </h2>
+          <div id="regMindanao" class="accordion-collapse collapse"
+            aria-labelledby="headingMindanao" data-bs-parent="#regionAccordion">
+            <div class="accordion-body">Kulintang, T'nalak Weaving, and the Singkil dance of the Maranao people.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-6">
+          <h2 class="fw-bold text-primary">About This Site</h2>
+          <p class="text-secondary">Diwa Pilipinas is a student showcase gallery built with HTML5, CSS3, and Bootstrap 5.
+            It highlights 12 living traditions across the Philippines' three major island groups &mdash; Luzon, Visayas,
+            and Mindanao &mdash; spanning festivals, attire, cuisine, and craftsmanship, using a fully responsive grid,
+            an interactive gallery, and a details modal for each entry.</p>
+          <p class="text-secondary mb-0">Built as a Midterm Laboratory project for CCS114 &ndash; Web Technologies,
+            University of Cabuyao.</p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="row g-2">
+            <div class="col-4 col-md-3 col-lg-2"><div class="ratio ratio-1x1"><img src="barong-tagalog.webp" class="rounded object-fit-cover" alt="thumb"></div></div>
+            <div class="col-4 col-md-3 col-lg-2"><div class="ratio ratio-1x1"><img src="sinulog-festival.jpg" class="rounded object-fit-cover" alt="thumb"></div></div>
+            <div class="col-4 col-md-3 col-lg-2"><div class="ratio ratio-1x1"><img src="kulintang.jpg" class="rounded object-fit-cover" alt="thumb"></div></div>
+            <div class="col-4 col-md-3 col-lg-2"><div class="ratio ratio-1x1"><img src="parol.avif" class="rounded object-fit-cover" alt="thumb"></div></div>
+            <div class="col-4 col-md-3 col-lg-2"><div class="ratio ratio-1x1"><img src="lechon.webp" class="rounded object-fit-cover" alt="thumb"></div></div>
+            <div class="col-4 col-md-3 col-lg-2"><div class="ratio ratio-1x1"><img src="tinalak weaving.png" class="rounded object-fit-cover" alt="thumb"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold text-primary mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <form onsubmit="return false;">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Riezel Solinas">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="riezelsolinas@email.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" placeholder="Tell us which tradition you'd like to learn more about!"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESTINATION DETAIL MODALS ============ -->
+
+  <div class="modal fade" id="modal-barong-tagalog" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Barong Tagalog</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="barong-tagalog.webp" class="rounded object-fit-cover" alt="Barong Tagalog"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Nationwide, rooted in Luzon &mdash; Attire</p>
+          <p>Made of sheer, embroidered fabric like pi&ntilde;a or jusi, the Barong Tagalog is the traditional formal wear for Filipino men, worn at weddings, graduations, and state functions.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-filipiniana-terno" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Filipiniana / Terno</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="filipiniana.jpg" class="rounded object-fit-cover" alt="Filipiniana Terno"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Nationwide, rooted in Luzon &mdash; Attire</p>
+          <p>Known for its structured butterfly sleeves, the Filipiniana is the elegant, gauzy dress that has represented Filipino womanhood since the Spanish colonial era.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-pahiyas-festival" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Pahiyas Festival</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="pahiyas.jpg" class="rounded object-fit-cover" alt="Pahiyas Festival"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Lucban, Quezon &mdash; Luzon</p>
+          <p>Held every May, Pahiyas sees homes in Lucban decorated top to bottom with colorful rice wafers called kiping and farm produce, giving thanks for a bountiful harvest.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-adobo" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Adobo</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="adobo.webp" class="rounded object-fit-cover" alt="Adobo"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Nationwide, rooted in Luzon &mdash; Food</p>
+          <p>Widely regarded as the country's unofficial national dish, adobo is meat slow-simmered in vinegar, soy sauce, garlic, and pepper &mdash; a method born from preserving food in a tropical climate.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-baybayin-script" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Baybayin Script</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="Baybayin.webp" class="rounded object-fit-cover" alt="Baybayin Script"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Pre-colonial, widespread in Luzon &mdash; Arts &amp; Crafts</p>
+          <p>An ancient syllabic writing system used across the islands before Spanish colonization, Baybayin has become a modern symbol of pride in indigenous Filipino heritage.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-parol-lantern" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Parol</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="parol.avif" class="rounded object-fit-cover" alt="Parol Lantern"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> San Fernando, Pampanga &mdash; Luzon</p>
+          <p>This star-shaped lantern lights up Filipino homes every Christmas season, symbolizing hope and guidance, with the giant lanterns of Pampanga among the most famous in the country.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-sinulog-festival" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Sinulog Festival</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="sinulog-festival.jpg" class="rounded object-fit-cover" alt="Sinulog Festival"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Cebu City &mdash; Visayas</p>
+          <p>One of the grandest festivals in the country, Sinulog honors the Santo Ni&ntilde;o with a week of street dancing, drumbeats, and processions drawing millions of devotees each January.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-ati-atihan-festival" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Ati-Atihan Festival</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="atih-atihan.webp" class="rounded object-fit-cover" alt="Ati-Atihan Festival"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Kalibo, Aklan &mdash; Visayas</p>
+          <p>Often called the "Mother of All Philippine Festivals," Ati-Atihan features soot-painted revelers dancing to tribal drums in a joyous, chaotic tribute to the Santo Ni&ntilde;o.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-lechon" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Lechon</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="lechon.webp" class="rounded object-fit-cover" alt="Lechon"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Cebu &mdash; Visayas</p>
+          <p>Whole pig roasted slowly over charcoal until the skin turns crackling-crisp, lechon is the celebratory centerpiece of Filipino feasts, with Cebu's version famed for needing no sauce.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-tinikling-dance" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Tinikling</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="tinikling-dance-philippines.jpg" class="rounded object-fit-cover" alt="Tinikling Dance"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Leyte origin, danced nationwide &mdash; Visayas</p>
+          <p>The Philippines' best-known folk dance mimics the movement of the tikling bird as dancers nimbly step between two bamboo poles clashed together in rhythm.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-kulintang" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Kulintang</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="kulintang.jpg" class="rounded object-fit-cover" alt="Kulintang"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Maguindanao &mdash; Mindanao</p>
+          <p>A row of small, graduated gongs played in intricate rhythms, the kulintang ensemble is central to the indigenous musical traditions of Mindanao's Muslim and Lumad communities.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-tnalak-weaving" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">T'nalak Weaving</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3"><img src="tinalak weaving.png" class="rounded object-fit-cover" alt="T'nalak Weaving"></div>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> South Cotabato &mdash; Mindanao</p>
+          <p>Woven from abaca fiber by the T'boli "dreamweavers," t'nalak cloth carries patterns said to be revealed to the weaver in her dreams, making each piece sacred and unrepeatable.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="text-center py-4 bg-dark text-light">
+    <div class="container">
+      <p class="mb-0 small">&copy; 2026 Diwa Pilipinas &mdash; CCS114 Midterm Laboratory Activity 2, Riezel Solinas.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
